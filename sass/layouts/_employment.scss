@@ -1,0 +1,27 @@
+.employment {
+	padding-top: 0;
+}
+
+.applications__list {
+	display: flex;
+	column-gap: 30px;
+}
+
+.employment__title {
+	margin-bottom: 50px;
+}
+
+.applications__item {
+	position: relative;
+}
+
+.applications__bottom-title {
+	@include styles(700, 14, 1.14, 0.03);
+	@include location;
+	text-transform: uppercase;
+	bottom: 0;
+	position: absolute;
+	width: 370px;
+	height: 70px;
+	background-color: rgba(47, 48, 58, 0.8);
+}

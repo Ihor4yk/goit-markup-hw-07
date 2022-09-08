@@ -1,0 +1,126 @@
+.footer {
+	background-color: var(--hero-footer-background-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer .container {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer-conect {
+	flex-grow: 1;
+}
+
+.footer-logo {
+	font-family: "Raleway", sans-serif;
+	@include styles(700, 26, 1.19, 0.03);
+	color: var(--main-logo-color);
+}
+
+.footer-address {
+	font-style: normal;
+}
+
+.footer-link {
+	@include styles(null, 14, 1.71, 0.03);
+	color: var(--main-color);
+}
+
+.footer-contact {
+	@include styles(null, 14, 1.71, 0.03);
+}
+
+.footer-item {
+	margin-top: 20px;
+	&:not(:first-child) {
+		margin-top: 9px;
+	}
+}
+
+.footer-soc {
+	margin-left: 70px;
+}
+
+.footer-soc-title {
+	@include styles(700, 14, 1.14, 0.03);
+	text-transform: uppercase;
+	color: var(--main-color);
+	margin-bottom: 20px;
+}
+
+.footer-soc-list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.footer-soc-link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	@include location;
+	transition: background-color var(--transition);
+	&:hover,
+	&:focus {
+		background-color: #2196f3;
+	}
+}
+
+.footer-soc-icon {
+	fill: var(--fill-color);
+	transition: fill var(--transition);
+	.footer-soc-link:hover &,
+	.footer-soc-link:focus & {
+		fill: var(--fill-color);
+	}
+}
+
+.footer-subscription {
+	margin-left: 93px;
+}
+
+.footer-subscription-title {
+	@include styles(700, 14, 1.14, 0.03);
+	text-transform: uppercase;
+	color: var(--main-color);
+	margin-bottom: 20px;
+}
+
+.footer-subscription-input {
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: #2f303a;
+	padding-left: 16px;
+	&:focus {
+		outline-color: #2196f3;
+	}
+}
+
+.footer-subscription-form {
+	@include location;
+}
+
+.footer-subscription-button {
+	@include styles(700, 16, 1.88, 0.06);
+	@include location;
+	width: 200px;
+	height: 50px;
+	background-color: #2196f3;
+	color: var(--main-color);
+	border: transparent;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	margin-left: 12px;
+	@include location;
+}
+
+.footer-subscription-icon {
+	fill: var(--fill-color);
+	margin-left: 10px;
+}

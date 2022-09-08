@@ -1,0 +1,19 @@
+@import "./utils/mixes";
+@import "./utils/modifierss-bem";
+
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+@import "./components/container";
+@import "./components/title";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/employment";
+@import "./layouts/portfolio";
+@import "./layouts/customers";
+@import "./layouts/footer";
+@import "./layouts/filter-gallery";
+@import "./components/modal";

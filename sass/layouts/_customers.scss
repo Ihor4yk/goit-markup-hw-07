@@ -1,0 +1,33 @@
+.customers-title {
+	margin-bottom: 50px;
+}
+
+.customers-list {
+	display: flex;
+}
+
+.customers-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.customers-soc-link {
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	@include location;
+	transition: border-color var(--transition);
+	&:hover,
+	&:focus {
+		border-color: var(--hover-focus-color);
+	}
+}
+
+.customers-soc-icon {
+	fill: #afb1b8;
+	transition: fill var(--transition);
+	.customers-soc-link:hover &,
+	.customers-soc-link:focus & {
+		fill: var(--hover-focus-color);
+	}
+}

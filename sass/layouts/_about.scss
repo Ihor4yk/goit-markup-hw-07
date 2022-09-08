@@ -1,0 +1,33 @@
+.pic-list {
+	display: flex;
+	justify-content: center;
+	column-gap: 30px;
+}
+
+.pic-list__soc-link {
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+	background-color: #f5f4fa;
+	@include location;
+}
+
+.pic-list__soc-icon {
+	fill: #212121;
+}
+
+.pic-list__title {
+	@include styles(700, 14, 1.14, 0.03);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.pic-list__text {
+	@include styles(null, 14, 1.71, 0.03);
+	color: var(--main-text-color);
+}
+
+.pic-list__item {
+	max-width: 270px;
+}
